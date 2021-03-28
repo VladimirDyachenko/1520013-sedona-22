@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page-body">
+
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img src="img/logo-sedona-small.svg" width="102" height="84" alt="CITY OF SEDONA">
+    </a>
+
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a href="gallery.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="feedback.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Html academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <div class="welcome welcome--small">
+      <img class="welcome__image" src="img/back-mobile.jpg" width="320" height="214" alt="Вид на горы в Седоне">
+      <img class="welcome__text" src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
+    </div>
+
+    <section class="page-title">
+      <h1 class="title page-title__title">Фото и видео</h1>
+      <p class="page-title__paragraph">Не можете решиться на путешествие из-за курса? Фот ографии помогут вам забыть о
+        политике и экономике.</p>
+    </section>
+
+    <section class="gallery">
+      <h2 class="visually-hidden">Фотографии Седоны</h2>
+
+      <div class="gallery__wrapper">
+        <div class="gallery__item image-card image-card--big">
+          <a class="image-card__link" href="#">
+            <span class="visually-hidden">Открыть фотографию</span>
+            <img class="image-card__image" src="img/photo-1.jpg" width="280" height="280" alt="Дорога во время заката">
+          </a>
+          <div class="image-card__caption">
+            <div class="image-card__text-wrapper">
+              <p class="image-card__name">Неродные просторы</p>
+              <p class="image-card__author">Автор фото: Борис</p>
+            </div>
+            <div class="image-card__actions">
+              <div class="image-card__like like">
+                <button class="like__button" type="button">
+                  <span class="visually-hidden">Нравится!</span>
+                </button>
+                <span class="like__counter"><b>1350</b></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery__item image-card">
+          <a class="image-card__link" href="#">
+            <span class="visually-hidden">Открыть фотографию</span>
+            <img class="image-card__image" src="img/photo-2.jpg" width="280" height="280" alt="Кактус крупным планом">
+          </a>
+          <div class="image-card__caption">
+            <div class="image-card__text-wrapper">
+              <p class="image-card__name">Местная растительность</p>
+              <p class="image-card__author">Автор фото: Сергей</p>
+            </div>
+            <div class="image-card__actions">
+              <div class="image-card__like like">
+                <button class="like__button" type="button">
+                  <span class="visually-hidden">Нравится!</span>
+                </button>
+                <span class="like__counter"><b>143</b></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery__item image-card">
+          <a class="image-card__link" href="#">
+            <span class="visually-hidden">Открыть фотографию</span>
+            <img class="image-card__image" src="img/photo-3.jpg" width="280" height="280"
+              alt="Горная дорога с высоты птичьего полета">
+          </a>
+          <div class="image-card__caption">
+            <div class="image-card__text-wrapper">
+              <p class="image-card__name">Дорога на север</p>
+              <p class="image-card__author">Автор фото: Петр</p>
+            </div>
+            <div class="image-card__actions">
+              <div class="image-card__like like">
+                <button class="like__button" type="button">
+                  <span class="visually-hidden">Нравится!</span>
+                </button>
+                <span class="like__counter"><b>96</b></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery__item image-card">
+          <a class="image-card__link" href="#">
+            <span class="visually-hidden">Открыть фотографию</span>
+            <img class="image-card__image" src="img/photo-4.jpg" width="280" height="280" alt="Мост Дьявола в каньоне">
+          </a>
+          <div class="image-card__caption">
+            <div class="image-card__text-wrapper">
+              <p class="image-card__name">Мост дьявола</p>
+              <p class="image-card__author">Автор фото: Антон</p>
+            </div>
+            <div class="image-card__actions">
+              <div class="image-card__like like">
+                <button class="like__button" type="button">
+                  <span class="visually-hidden">Нравится!</span>
+                </button>
+                <span class="like__counter"><b>96</b></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-title">
+      <h2 class="title page-title__title">Все еще сомневаетесь?</h2>
+      <p class="page-title__paragraph">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+        очередной раз!</p>
+    </section>
+
+    <div class="video video">
+      <div class="video__player">
+        <img src="img/video-placeholder.jpg" width="320" height="201" alt="Временное изображение">
+
+        <div class="video__controls">
+          <div class="video__time-line"></div>
+
+          <button class="video__button video__button--replay" type="button">
+            <span class="visually-hidden">Повтор</span>
+          </button>
+
+          <button class="video__button video__button--replay" type="button">
+            <span class="visually-hidden">Субтитры</span>
+          </button>
+
+          <button class="video__button video__button--fullscreen" type="button">
+            <span class="visually-hidden">Во весь экран</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+
+      <p class="page-footer__hashtag hashtag">
+        <b class="hashtag__text">#visitSEDONA</b>
+      </p>
+
+      <div class="page-footer__socials socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link socials__link--twitter" href="#">
+              <span class="visually-hidden">Twitter</span>
+              <img src="img/icon-twitter.svg" width="18" height="15" alt="Twitter">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--facebook" href="#">
+              <span class="visually-hidden">Facebook</span>
+              <img src="img/icon-facebook.svg" width="9" height="19" alt="Facebook">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--youtube" href="#">
+              <span class="visually-hidden">YouTube</span>
+              <img src="img/icon-youtube.svg" width="20" height="14" alt="YouTube">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/logo-htmlacademy.svg" width="27" height="35" alt="HTML ACADEMY">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</html>
