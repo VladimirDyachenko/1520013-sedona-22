@@ -1,0 +1,24 @@
+.reasons {
+  background-color: $reasons-bg-color;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reasons__list {
+  @include reset-list;
+}
+
+.reasons__item {
+  padding-top: 25px;
+  padding-bottom: 24px;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $reasons-border-color;
+  }
+}
+
+.reasons__paragraph {
+  color: $light-primary-text-color;
+}

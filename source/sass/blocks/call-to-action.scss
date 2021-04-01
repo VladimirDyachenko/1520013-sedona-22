@@ -1,0 +1,24 @@
+.call-to-action {
+  text-transform: uppercase;
+  padding: 33px 20px 49px 20px;
+}
+
+.call-to-action__wrapper {
+  max-width: 458px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.call-to-action__title {
+  margin-bottom: 30px;
+}
+
+.call-to-action__paragraph {
+  color: $light-primary-text-color;
+  margin-bottom: 27px;
+}
+
+.call-to-action__button {
+  display: block;
+  padding: 14.5px 32px 17.5px 32px;
+}

@@ -1,0 +1,16 @@
+.socials__list {
+  @include reset-list;
+}
+
+.socials__link {
+  background-color: $accent-color;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--facebook {
+    width: 47px;
+  }
+}
