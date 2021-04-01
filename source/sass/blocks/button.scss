@@ -1,0 +1,24 @@
+.button {
+  color: $secondary-text-color;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $accent-color;
+  border: none;
+
+  &:hover {
+    background-color: $accent-color-hover;
+  }
+
+  &:active {
+    color: $secondary-text-color-A30;
+    background-color: $accent-color-click;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $button-disabled;
+  }
+}

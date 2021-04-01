@@ -1,0 +1,18 @@
+.socials__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socials__link {
+  background-color: $accent-color;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials__link--facebook {
+  width: 47px;
+}

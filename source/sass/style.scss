@@ -1,1 +1,22 @@
-// Начните писать стили здесь
+//Variables
+@import "variables/colors.scss";
+
+//Global
+@import "global/fonts.scss";
+@import "global/global.scss";
+
+//Blocks
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/welcome.scss";
+@import "blocks/introduction.scss";
+@import "blocks/reason-highlight.scss";
+@import "blocks/advantages.scss";
+@import "blocks/reasons.scss";
+@import "blocks/call-to-action.scss";
+@import "blocks/button.scss";
+@import "blocks/map.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/hashtag.scss";
+@import "blocks/socials.scss";
+@import "blocks/copyright.scss";

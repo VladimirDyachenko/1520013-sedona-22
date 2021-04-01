@@ -1,0 +1,20 @@
+.welcome {
+  position: relative;
+  height: 389px;
+  clip-path: polygon(0 0, 100% 0, 100% 363px, 50% 100%, 0 363px);
+}
+
+.welcome__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.welcome__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+}

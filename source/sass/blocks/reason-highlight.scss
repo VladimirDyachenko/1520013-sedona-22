@@ -1,0 +1,23 @@
+.reason-highlight {
+  background-color: $accent-color;
+  color: $secondary-text-color;
+}
+
+.reason-highlight__text-wrapper {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 34px 12px 39px 13px;
+}
+
+.reason-highlight__title {
+  margin-top: 0;
+}
+
+.reason-highlight__paragraph {
+  margin-bottom: 0;
+}
+
+.reason-highlight__image {
+  width: 100%;
+  height: auto;
+}
