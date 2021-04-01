@@ -48,9 +48,8 @@
 }
 
 .advantages__list {
-  margin: 0;
+  @include reset-list;
   padding-left: 50px;
-  list-style: none;
 }
 
 .advantages__title {

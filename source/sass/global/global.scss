@@ -5,7 +5,7 @@
 }
 
 .page {
-  font-family: "PT Sans", sans-serif;
+  @include main-font;
   font-size: 14px;
   line-height: 21px;
 }

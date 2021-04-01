@@ -3,12 +3,10 @@
 }
 
 .main-nav__list {
-  margin: 0;
-  padding: 0;
+  @include reset-list;
 }
 
 .main-nav__item {
-  list-style: none;
   font-size: 18px;
   line-height: 40px;
   background-color: $accent-color;

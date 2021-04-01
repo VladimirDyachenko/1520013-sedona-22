@@ -1,0 +1,9 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin main-font {
+  font-family: "PT Sans", "Arial", sans-serif;
+}

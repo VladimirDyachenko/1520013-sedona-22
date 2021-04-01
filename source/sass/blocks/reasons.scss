@@ -7,9 +7,7 @@
 }
 
 .reasons__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list;
 }
 
 .reasons__item {
@@ -17,7 +15,7 @@
   padding-bottom: 24px;
 
   &:not(:last-of-type) {
-    border-bottom: 1px solid #d6d6d6;
+    border-bottom: 1px solid $reasons-border-color;
   }
 }
 
