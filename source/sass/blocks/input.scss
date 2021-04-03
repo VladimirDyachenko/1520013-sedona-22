@@ -1,0 +1,25 @@
+.input {
+  @include main-font;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: $input-background-color;
+  border: none;
+}
+
+.input::placeholder {
+  @include main-font;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  color: $primary-text-color;
+}
+
+.input--text {
+  padding: 18px 22px 14px 22px;
+}
+
+.input--textarea {
+  resize: none;
+  padding: 13px 20px;
+  width: 100%;
+}

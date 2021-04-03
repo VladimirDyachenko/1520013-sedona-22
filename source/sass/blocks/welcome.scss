@@ -2,6 +2,11 @@
   position: relative;
   height: 389px;
   clip-path: polygon(0 0, 100% 0, 100% 363px, 50% 100%, 0 363px);
+
+  &--small {
+    height: 158px;
+    clip-path: polygon(0 0, 100% 0, 100% 132px, 50% 100%, 0 132px);
+  }
 }
 
 .welcome__image {
