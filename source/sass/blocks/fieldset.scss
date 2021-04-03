@@ -1,0 +1,151 @@
+.fieldset {
+  border: none;
+  padding: 20px 0 25px 0;
+  margin: 0;
+  border-top: 1px solid $button-disabled;
+  min-width: 0;
+}
+
+.fieldset__legend {
+  float: right;
+  text-align: center;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.fieldset--name .fieldset__label {
+  text-transform: uppercase;
+}
+
+.fieldset--name .fieldset__input {
+  margin-bottom: 20px;
+}
+
+.fieldset--name .fieldset__input,
+.fieldset--contacts .fieldset__input {
+  flex-grow: 1;
+}
+
+.fieldset--impression .fieldset__input {
+  margin: 0;
+  margin-bottom: 13px;
+  margin-right: 22px;
+}
+
+.fieldset--visited .fieldset__input {
+  margin-bottom: 24px;
+  margin-right: 24px;
+}
+
+.feedback__submit {
+  width: 100%;
+  margin-top: 26px;
+  margin-bottom: 48px;
+  padding: 18.5px 33px 13.5px 32px;
+}
+
+.feedback__legend {
+  display: none;
+}
+
+.fieldset--emotions > .feedback__label {
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.fieldset__row {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  // max-width: 280px;
+}
+
+.fieldset__row--inline {
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.fieldset__row--inline .fieldset__input {
+  min-width: 40px;
+}
+
+.fieldset__row--inline .fieldset__label {
+  margin-right: 15px;
+  display: block;
+  justify-content: space-between;
+}
+
+.fieldset__label {
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 18px;
+}
+
+.fieldset--name .fieldset__label,
+.fieldset--contacts .fieldset__label {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+// Отступы внутри филдсетов
+// Имя
+.fieldset--name > .fieldset__row .fieldset__input {
+  margin-bottom: 20px;
+}
+
+.fieldset--name > .fieldset__row:last-child .fieldset__input {
+  margin-bottom: 5px;
+}
+
+// Контактная информация
+.fieldset--contacts .fieldset__legend {
+  margin-bottom: 17px;
+}
+
+.fieldset--contacts > .fieldset__row:first-of-type .fieldset__label {
+  margin-bottom: 8px;
+}
+
+.fieldset--contacts .fieldset__label {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 22px;
+  margin-bottom: 5px;
+}
+
+.fieldset--contacts .fieldset__row:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+//Общее впечатление
+.fieldset--impression > .fieldset__legend {
+  margin-bottom: 37px;
+}
+
+.fieldset--impression > .fieldset__row .fieldset__label {
+  margin-bottom: 37px;
+}
+
+.fieldset--impression > .fieldset__row:last-of-type .fieldset__label {
+  margin-bottom: 21px;
+}
+
+//Посещенные достопримечательности:
+.fieldset--visited {
+  padding: 15px 0;
+}
+
+.fieldset--visited .fieldset__legend {
+  margin-bottom: 36px;
+}
+
+.fieldset--visited .fieldset__label {
+  margin-bottom: 54px;
+}
+
+.fieldset--visited > .fieldset__row:last-of-type .fieldset__label {
+  margin-bottom: 25px;
+}
