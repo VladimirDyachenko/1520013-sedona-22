@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -20,16 +21,16 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a href="gallery.html">Фото и видео</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="feedback.html">Форма отзыва</a>
+            <a class="main-nav__link main-nav__link--active" href="#">Фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Html academy</a>
+            <a class="main-nav__link" href="feedback.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Html academy</a>
           </li>
         </ul>
       </div>
@@ -42,9 +43,9 @@
       <img class="welcome__text" src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
     </div>
 
-    <section class="page-title">
+    <section class="page-title page-title--gallery page__wrapper">
       <h1 class="title page-title__title">Фото и видео</h1>
-      <p class="page-title__paragraph">Не можете решиться на путешествие из-за курса? Фот ографии помогут вам забыть о
+      <p class="page-title__paragraph">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
         политике и экономике.</p>
     </section>
 
@@ -131,7 +132,7 @@
                 <button class="like__button" type="button">
                   <span class="visually-hidden">Нравится!</span>
                 </button>
-                <span class="like__counter"><b>96</b></span>
+                <span class="like__counter"><b>254</b></span>
               </div>
             </div>
           </div>
@@ -139,15 +140,15 @@
       </div>
     </section>
 
-    <section class="page-title">
+    <section class="page-title page-title--gallery page-title--video page__wrapper">
       <h2 class="title page-title__title">Все еще сомневаетесь?</h2>
       <p class="page-title__paragraph">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
         очередной раз!</p>
     </section>
 
-    <div class="video video">
+    <div class="video">
       <div class="video__player">
-        <img src="img/video-placeholder.jpg" width="320" height="201" alt="Временное изображение">
+        <img class="video__placeholder" src="img/video-placeholder.jpg" width="320" height="201" alt="Временное изображение">
 
         <div class="video__controls">
           <div class="video__time-line"></div>
@@ -168,7 +169,7 @@
     </div>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer page__wrapper ">
     <div class="page-footer__wrapper">
 
       <p class="page-footer__hashtag hashtag">

@@ -3,13 +3,29 @@
   text-transform: uppercase;
   padding-top: 36px;
   padding-bottom: 16px;
+
+  &--gallery {
+    padding-top: 32px;
+    padding-bottom: 33px;
+  }
 }
 
 .page-title__title {
   margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.page-title--video > .page-title__title {
+  margin-bottom: 30px;
 }
 
 .page-title__paragraph {
+  line-height: 24px;
   color: $light-primary-text-color;
   margin-bottom: 0;
+}
+
+.page-title--video > .page-title__paragraph {
+  padding-left: 20px;
+  padding-right: 20px;
 }
