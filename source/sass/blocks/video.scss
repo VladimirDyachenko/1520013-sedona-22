@@ -1,0 +1,19 @@
+.video__placeholder {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.video__controls {
+  background-color: $input-background-color;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.video__time-line {
+  $height: 45px;
+  width: 100%;
+  height: $height;
+  background-color: $time-line-background-color;
+  transform: translateY(-$height);
+}
