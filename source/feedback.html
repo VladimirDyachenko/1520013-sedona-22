@@ -52,7 +52,7 @@
     <form class="feedback page__wrapper" action="https://echo.htmlacademy.ru" method="post">
       <div class="feedback__wrapper">
 
-        <fieldset class="fieldset fieldset--name">
+        <fieldset class="feedback__item fieldset fieldset--name">
           <legend class="title fieldset__legend">Представьтесь:</legend>
 
           <div class="fieldset__row fieldset__row--inline">
@@ -74,7 +74,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="fieldset fieldset--contacts">
+        <fieldset class="feedback__item feedback__item--full-width fieldset fieldset--contacts">
           <legend class="title fieldset__legend">Контактная информация:</legend>
 
           <div class="fieldset__row">
@@ -90,7 +90,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="fieldset fieldset--impression">
+        <fieldset class="feedback__item fieldset fieldset--impression">
           <legend class="title fieldset__legend">Ваше общее впечатление:</legend>
 
           <div class="fieldset__row fieldset__row--inline">
@@ -111,7 +111,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="fieldset fieldset--visited">
+        <fieldset class="feedback__item feedback__item--full-width fieldset fieldset--visited">
           <legend class="title fieldset__legend">Посещенные достопримечательности:</legend>
 
           <div class="fieldset__row fieldset__row--inline">
@@ -135,13 +135,13 @@
           </div>
         </fieldset>
 
-        <div class="fieldset fieldset--emotions">
+        <div class="feedback__item feedback__item--full-width fieldset fieldset--emotions">
           <label class="title feedback__label" for="emotions">Опишите свои эмоции:</label>
           <textarea class="fieldset__textarea input input--textarea" name="emotions" id="emotions" cols="30" rows="10"
             placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
 
-        <input class="button feedback__submit" type="submit" value="Отправить отзыв">
+        <input class="button fieldset__submit feedback__submit" type="submit" value="Отправить отзыв">
         <span class="feedback__legend">* — обязательные поля</span>
       </div>
     </form>
@@ -189,7 +189,7 @@
 
   <div class="modal modal--success">
     <h2 class="title modal__title">Ваш отзыв отправлен!</h2>
-    <p class="modal__paragraph">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем
+    <p class="modal__paragraph">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
       его на сайте.</p>
     <button class="button modal__button" type="button">Закрыть окно</button>
   </div>

@@ -8,11 +8,20 @@
     padding-top: 32px;
     padding-bottom: 33px;
   }
+
+  @media (min-width: $tablet-width) {
+    max-width: 560px;
+    margin: 0 auto;
+  }
 }
 
 .page-title__title {
   margin-top: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .page-title--video > .page-title__title {
@@ -23,6 +32,11 @@
   line-height: 24px;
   color: $light-primary-text-color;
   margin-bottom: 0;
+
+  @media (max-width: $tablet-width) {
+    max-width: 435px;
+    margin: 0 auto;
+  }
 }
 
 .page-title--video > .page-title__paragraph {
