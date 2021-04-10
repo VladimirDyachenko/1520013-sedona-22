@@ -41,4 +41,14 @@
 .page__wrapper {
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }

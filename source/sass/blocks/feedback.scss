@@ -1,0 +1,37 @@
+.feedback__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.feedback__item {
+  flex: 1 0 324px;
+}
+
+.feedback__item--full-width {
+  flex: 1 0 100%;
+}
+
+.fieldset--impression {
+  order: -1;
+}
+
+.feedback__submit {
+  @media (min-width: $tablet-width) {
+    flex-basis: 50%;
+  }
+}
+
+.feedback__legend {
+  display: none;
+  color: $light-primary-text-color;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+    align-self: center;
+  }
+}
