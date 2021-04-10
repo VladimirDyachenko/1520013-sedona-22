@@ -8,10 +8,14 @@
   @include main-font;
   font-size: 14px;
   line-height: 21px;
+  background-color: $input-background-color;
 }
 
 .page-body {
-  margin: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: $body-background-color;
+  box-shadow: 0 5px 15px $body-shadow-color;
 }
 
 .visually-hidden {

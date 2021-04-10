@@ -1,12 +1,21 @@
 .map {
   width: 100%;
+  height: 350px;
+  position: relative;
 }
 
 .map__fall-back-image {
-  max-width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 .map__iframe {
+  display: block;
   border: none;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }

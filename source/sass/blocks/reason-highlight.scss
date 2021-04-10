@@ -1,12 +1,26 @@
 .reason-highlight {
   background-color: $accent-color;
   color: $secondary-text-color;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .reason-highlight__text-wrapper {
   text-align: center;
   text-transform: uppercase;
   padding: 34px 12px 39px 13px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 400px;
+  }
 }
 
 .reason-highlight__title {
@@ -20,4 +34,10 @@
 .reason-highlight__image {
   width: 100%;
   height: auto;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 256px;
+    flex: 1 0 512px;
+  }
 }

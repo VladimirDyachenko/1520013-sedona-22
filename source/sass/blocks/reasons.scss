@@ -4,18 +4,42 @@
   padding-right: 20px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .reasons__list {
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .reasons__item {
   padding-top: 25px;
   padding-bottom: 24px;
 
-  &:not(:last-of-type) {
-    border-bottom: 1px solid $reasons-border-color;
+  @media (max-width: $mobile-only) {
+    &:not(:last-of-type) {
+      border-bottom: 1px solid $reasons-border-color;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    flex: 1 0 256px;
+    min-height: 256px;
+    padding: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex: 1 0 400px;
+    min-height: 256px;
+    padding: 40px;
   }
 }
 
