@@ -4,6 +4,11 @@
 
 .main-nav__list {
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .main-nav__item {
@@ -12,6 +17,7 @@
   background-color: $accent-color;
   font-weight: 700;
   color: $secondary-text-color;
+  text-align: center;
 
   &:hover {
     background-color: $accent-color-hover;
@@ -21,6 +27,30 @@
     color: $secondary-text-color-A30;
     background-color: $accent-color-click;
   }
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    color: $primary-text-color;
+    flex-basis: 153px;
+
+    &:nth-child(4n + 3) {
+      margin-left: auto;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: $accent-color;
+    }
+
+    &:active {
+      background-color: transparent;
+      color: $primary-text-color-A30;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 239px;
+  }
 }
 
 .main-nav__link {
@@ -29,4 +59,22 @@
   padding: 10px 10px 5px 10px;
   color: inherit;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__link--active {
+    color: $main-nav-text-active;
+
+    &:hover {
+      color: $main-nav-text-hover;
+    }
+
+    &:active {
+      color: $main-nav-text-active-A30;
+    }
+  }
 }

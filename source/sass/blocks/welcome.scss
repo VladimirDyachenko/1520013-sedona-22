@@ -7,6 +7,15 @@
     height: 158px;
     clip-path: polygon(0 0, 100% 0, 100% 132px, 50% 100%, 0 132px);
   }
+
+  @media (min-width: $tablet-width) {
+    height: 518px;
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 95.7% 93.8%, 95.7% 89%, 50% 100%, 4.3% 88.8%, 4.3% 93.8%, 0% 93%);
+  }
+
+  @media (min-width: $desktop-width) {
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 78.7% 94.8%, 78.7% 89%, 50% 100%, 18.3% 88.8%, 18.3% 93.8%, 0% 89%);
+  }
 }
 
 .welcome__image {
@@ -14,6 +23,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: auto;
 }
 
 .welcome__text {
@@ -22,4 +32,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
 }

@@ -1,10 +1,21 @@
 .introduction {
   padding: 32px 20px 27px 20px;
   text-align: center;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 600px;
+  }
 }
 
 .introduction__title {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .introduction__paragraph {
