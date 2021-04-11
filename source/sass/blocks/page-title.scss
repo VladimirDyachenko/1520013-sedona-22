@@ -24,9 +24,6 @@
   }
 }
 
-.page-title--video > .page-title__title {
-  margin-bottom: 30px;
-}
 
 .page-title__paragraph {
   line-height: 24px;
@@ -37,6 +34,17 @@
     max-width: 435px;
     margin: 0 auto;
   }
+}
+
+.page-title--video {
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.page-title--video > .page-title__title {
+  margin-bottom: 30px;
 }
 
 .page-title--video > .page-title__paragraph {
