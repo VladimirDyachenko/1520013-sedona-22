@@ -29,6 +29,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 26px;
     background-color: transparent;
     color: $primary-text-color;
     flex-basis: 153px;
