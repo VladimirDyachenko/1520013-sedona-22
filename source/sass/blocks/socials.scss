@@ -1,5 +1,16 @@
 .socials__list {
   @include reset-list;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.socials__item {
+  margin-bottom: 6px;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 6px;
 }
 
 .socials__link {

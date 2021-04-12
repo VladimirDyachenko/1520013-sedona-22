@@ -1,8 +1,11 @@
 .copyright {
   text-transform: uppercase;
   line-height: 26px;
+  display: flex;
+  align-items: center;
 }
 
 .copyright__text {
+  margin-top: -8px;
   margin-right: 12px;
 }

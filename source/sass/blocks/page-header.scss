@@ -1,10 +1,25 @@
 .page-header {
   min-height: 56px;
+
+  @media (max-width: $mobile-only) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .page-header__logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  @media (max-width: $mobile-only) {
+    width: 102px;
+    height: 56px;
+    overflow: visible;
+    z-index: 1;
+    margin: 0 auto;
+  }
 }
