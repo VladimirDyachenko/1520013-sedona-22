@@ -15,7 +15,19 @@
 }
 
 .input--text {
-  padding: 18px 22px 14px 22px;
+  padding: 19px 22px 16px 22px;
+
+  &:hover {
+    background-color: $button-disabled;
+  }
+
+  &:focus {
+    background-color: transparent;
+    box-shadow: inset 0 4px 0 $button-disabled,
+      inset 0 -4px 0 $button-disabled,
+      inset 4px 0 0 $button-disabled,
+      inset -4px 0 0 $button-disabled;
+  }
 }
 
 .input--textarea {

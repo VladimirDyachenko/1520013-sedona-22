@@ -3,6 +3,7 @@
   padding: 20px 0 25px 0;
   margin: 0;
   min-width: 0;
+  position: relative;
 
   @media (max-width: $mobile-only) {
     padding: 20px 20px 25px 20px;
@@ -22,6 +23,24 @@
     &--name {
       padding-left: 58px;
     }
+
+    &--contacts,
+    &--visited,
+    &--emotions {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 123px;
+        height: 1px;
+        top: 30px;
+        background-color: $fieldset-decorative-border;
+      }
+
+      &::after {
+        right: 0;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -32,13 +51,28 @@
     &--name {
       padding-left: 79px;
     }
+
+    &--contacts,
+    &--visited,
+    &--emotions {
+      &::before,
+      &::after {
+        width: 280px;
+      }
+
+      &::after {
+        right: 0;
+      }
+    }
   }
 }
 
 .fieldset__legend {
   float: right;
   text-align: center;
+  justify-self: center;
   margin-bottom: 19px;
+  max-width: 308px;
 
   &--name {
     @media (min-width: $tablet-width) {
