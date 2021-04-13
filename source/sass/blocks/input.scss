@@ -2,7 +2,6 @@
   @include main-font;
   font-size: 18px;
   font-weight: 700;
-  background-color: $input-background-color;
   border: none;
 }
 
@@ -16,6 +15,7 @@
 
 .input--text {
   padding: 19px 22px 16px 22px;
+  background-color: $input-background-color;
 
   &:hover {
     background-color: $button-disabled;
@@ -34,4 +34,66 @@
   resize: none;
   padding: 13px 20px;
   width: 100%;
+  background-color: $input-background-color;
+}
+
+@mixin checkbox-pseudo {
+  $width: 51px;
+  content: "";
+  position: absolute;
+  width: $width;
+  height: $width;
+  left: 0;
+  transform: translateY(-25%);
+}
+
+.input--checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.input--checkbox + .input--lable {
+  cursor: pointer;
+
+  &::before {
+    @include checkbox-pseudo;
+    background-color: $input-background-color;
+
+    @media (max-width: $desktop-width - 1px) {
+      border-radius: 10px;
+    }
+  }
+}
+
+.input--checkbox:hover + .input--lable {
+  &::before {
+    background-color: $button-disabled;
+  }
+}
+
+.input--checkbox:active + .input--lable {
+  &::before {
+    background-color: $input-checkbox-focus;
+  }
+
+  &::after {
+    opacity: 0.3;
+  }
+}
+
+.input--checkbox:checked + .input--lable {
+  &::after {
+    @include checkbox-pseudo;
+    background-image: url("./../../img/icons/checked.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
