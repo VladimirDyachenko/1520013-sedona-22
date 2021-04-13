@@ -2,146 +2,242 @@
   border: none;
   padding: 20px 0 25px 0;
   margin: 0;
-  border-top: 1px solid $button-disabled;
   min-width: 0;
+
+  @media (max-width: $mobile-only) {
+    padding: 20px 20px 25px 20px;
+    border-top: 1px solid $button-disabled;
+  }
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+
+  @media (min-width: $tablet-width) {
+    &--impression {
+      padding-right: 30px;
+      border-right: 1px solid $button-disabled;
+    }
+
+    &--name {
+      padding-left: 58px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--impression {
+      padding-right: 50px;
+    }
+
+    &--name {
+      padding-left: 79px;
+    }
+  }
 }
 
 .fieldset__legend {
   float: right;
   text-align: center;
+  margin-bottom: 19px;
+
+  &--name {
+    @media (min-width: $tablet-width) {
+      text-align: left;
+    }
+  }
+
+  &--contacts {
+    margin-bottom: 17px;
+  }
+
+  &--impression {
+    margin-bottom: 37px;
+
+    @media (min-width: $tablet-width) {
+      text-align: left;
+    }
+  }
+
+  &--visited {
+    margin-bottom: 36px;
+  }
+}
+
+.fieldset__row--inline {
+  display: flex;
+  align-items: center;
+}
+
+.fieldset__input[type="text"],
+.fieldset__input[type="email"] {
   display: block;
   width: 100%;
-  text-transform: uppercase;
+}
+
+.fieldset--contacts .fieldset__row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-auto-rows: auto;
+}
+
+.fieldset__decorative {
+  width: 58px;
+  height: 58px;
+  background-color: $fieldset-decorative-background-color;
+
+  &--phone {
+    background-image: url("./../../img/icons/phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--email {
+    background-image: url("./../../img/icons/mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.fieldset__row:not(:last-of-type) {
   margin-bottom: 20px;
+}
+
+@media (max-width: $mobile-only) {
+  .fieldset--contacts .fieldset__row:not(:last-of-type) {
+    margin-bottom: 14px;
+  }
+}
+
+.fieldset--impression .fieldset__row:not(:last-of-type) {
+  margin-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+}
+
+.fieldset--visited .fieldset__row:not(:last-of-type) {
+  margin-bottom: 54px;
 }
 
 .fieldset--name .fieldset__label {
   text-transform: uppercase;
-}
-
-.fieldset--name .fieldset__input {
-  margin-bottom: 20px;
-}
-
-.fieldset--name .fieldset__input,
-.fieldset--contacts .fieldset__input {
-  flex-grow: 1;
-}
-
-.fieldset--impression .fieldset__input {
-  margin: 0;
-  margin-bottom: 13px;
-  margin-right: 22px;
-}
-
-.fieldset--visited .fieldset__input {
-  margin-bottom: 24px;
-  margin-right: 24px;
-}
-
-.feedback__submit {
-  width: 100%;
-  margin-top: 26px;
-  margin-bottom: 48px;
-  padding: 18.5px 33px 13.5px 32px;
-}
-
-.fieldset--emotions > .feedback__label {
-  display: block;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.fieldset__row {
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  // max-width: 280px;
-}
-
-.fieldset__row--inline {
-  flex-direction: row;
-  align-items: baseline;
-}
-
-.fieldset__row--inline .fieldset__input {
-  min-width: 40px;
-}
-
-.fieldset__row--inline .fieldset__label {
-  margin-right: 15px;
-  display: block;
-  justify-content: space-between;
-}
-
-.fieldset__label {
-  font-weight: 700;
-  line-height: 26px;
-  font-size: 18px;
-}
-
-.fieldset--name .fieldset__label,
-.fieldset--contacts .fieldset__label {
-  font-size: 14px;
-  font-weight: 400;
-}
-
-// Отступы внутри филдсетов
-// Имя
-.fieldset--name > .fieldset__row .fieldset__input {
-  margin-bottom: 20px;
-}
-
-.fieldset--name > .fieldset__row:last-child .fieldset__input {
-  margin-bottom: 5px;
-}
-
-// Контактная информация
-.fieldset--contacts .fieldset__legend {
-  margin-bottom: 17px;
-}
-
-.fieldset--contacts > .fieldset__row:first-of-type .fieldset__label {
-  margin-bottom: 8px;
+  color: $light-primary-text-color;
+  margin-right: 13px;
 }
 
 .fieldset--contacts .fieldset__label {
   text-transform: uppercase;
+  color: $light-primary-text-color;
   display: inline-block;
-  margin-left: 22px;
-  margin-bottom: 5px;
+  grid-column: 1 / -1;
+
+  @media (max-width: $mobile-only) {
+    margin-left: 21px;
+    margin-bottom: 8px;
+
+    &[for="email"] {
+      margin-bottom: 5px;
+    }
+  }
 }
 
-.fieldset--contacts .fieldset__row:not(:last-child) {
-  margin-bottom: 14px;
-}
-
-//Общее впечатление
-.fieldset--impression > .fieldset__legend {
-  margin-bottom: 37px;
-}
-
-.fieldset--impression > .fieldset__row .fieldset__label {
-  margin-bottom: 37px;
-}
-
-.fieldset--impression > .fieldset__row:last-of-type .fieldset__label {
-  margin-bottom: 21px;
-}
-
-//Посещенные достопримечательности:
-.fieldset--visited {
-  padding: 15px 0;
-}
-
-.fieldset--visited .fieldset__legend {
-  margin-bottom: 36px;
-}
-
+.fieldset--impression .fieldset__label,
 .fieldset--visited .fieldset__label {
-  margin-bottom: 54px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
-.fieldset--visited > .fieldset__row:last-of-type .fieldset__label {
-  margin-bottom: 25px;
+.fieldset__textarea {
+  height: 160px;
+}
+
+.feedback__submit {
+  width: auto;
+  margin: 26px 20px 48px 20px;
+  padding: 18.5px 33px 13.5px 32px;
+}
+
+// Tablet grid transformation
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .fieldset--visited {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+  }
+
+  .fieldset--visited .fieldset__legend {
+    grid-column: 1 / -1;
+    max-width: 310px;
+    justify-self: center;
+  }
+
+  .fieldset--visited .fieldset__row {
+    margin-bottom: 62px;
+
+    &:nth-last-of-type(odd) {
+      justify-self: start;
+      margin-left: 110px;
+    }
+
+    &:nth-last-of-type(even) {
+      justify-self: end;
+      margin-right: 35px;
+    }
+  }
+}
+
+.fieldset__row .fieldset__label--desktop-only {
+  display: none;
+}
+// Desktop grid transformation
+@media (min-width: $desktop-width) {
+  .fieldset--contacts {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+  }
+
+  .fieldset--contacts .fieldset__legend {
+    grid-column: 1 / -1;
+    margin-bottom: 71px;
+  }
+
+  .fieldset--contacts .fieldset__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 31px;
+  }
+
+  .fieldset--contacts .fieldset__label {
+    margin-right: 16px;
+
+    &[for="phone-number"] {
+      display: none;
+    }
+
+    &--desktop-only[for="phone-number"] {
+      display: inline-block;
+    }
+  }
+
+  .fieldset--contacts .fieldset__input {
+    flex: 0 0 257px;
+  }
+
+  .fieldset--visited {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+  }
+
+  .fieldset--visited .fieldset__legend {
+    grid-column: 1 / -1;
+    margin-bottom: 58px;
+  }
+
+  .fieldset--visited .fieldset__row {
+    margin-bottom: 62px;
+    justify-self: start;
+  }
 }

@@ -49,11 +49,11 @@
         вами достопримечательностях</p>
     </section>
 
-    <form class="feedback page__wrapper" action="https://echo.htmlacademy.ru" method="post">
+    <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
       <div class="feedback__wrapper">
 
         <fieldset class="feedback__item fieldset fieldset--name">
-          <legend class="title fieldset__legend">Представьтесь:</legend>
+          <legend class="title fieldset__legend fieldset__legend--name">Представьтесь:</legend>
 
           <div class="fieldset__row fieldset__row--inline">
             <label class="fieldset__label" for="first-name">Имя*:</label>
@@ -75,23 +75,26 @@
         </fieldset>
 
         <fieldset class="feedback__item feedback__item--full-width fieldset fieldset--contacts">
-          <legend class="title fieldset__legend">Контактная информация:</legend>
+          <legend class="title fieldset__legend fieldset__legend--contacts">Контактная информация:</legend>
 
           <div class="fieldset__row">
             <label class="fieldset__label" for="phone-number">Контактный телефон*:</label>
+            <label class="fieldset__label fieldset__label--desktop-only" for="phone-number">Телефон*:</label>
             <input class="fieldset__input input input--text" type="text" name="phone-number" id="phone-number"
               placeholder="Введите телефон" required>
+            <span class="fieldset__decorative fieldset__decorative--phone"></span>
           </div>
 
           <div class="fieldset__row">
             <label class="fieldset__label" for="email">Электронная почта*:</label>
             <input class="fieldset__input input input--text" type="email" name="email" id="email" placeholder="Введите e-mail"
               required>
+            <span class="fieldset__decorative fieldset__decorative--email"></span>
           </div>
         </fieldset>
 
         <fieldset class="feedback__item fieldset fieldset--impression">
-          <legend class="title fieldset__legend">Ваше общее впечатление:</legend>
+          <legend class="title fieldset__legend fieldset__legend--impression">Ваше общее впечатление:</legend>
 
           <div class="fieldset__row fieldset__row--inline">
             <input class="fieldset__input input input--radio" type="radio" name="impression" id="impression-good" value="good"
@@ -112,7 +115,7 @@
         </fieldset>
 
         <fieldset class="feedback__item feedback__item--full-width fieldset fieldset--visited">
-          <legend class="title fieldset__legend">Посещенные достопримечательности:</legend>
+          <legend class="title fieldset__legend fieldset__legend--visited">Посещенные достопримечательности:</legend>
 
           <div class="fieldset__row fieldset__row--inline">
             <input class="fieldset__input input input--checkbox" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
