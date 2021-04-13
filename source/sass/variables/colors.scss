@@ -1,4 +1,6 @@
 $accent-color: #81b3d2;
+$accent-color-A60: transparentize($accent-color, 0.4);
+$accent-color-A30: transparentize($accent-color, 0.7);
 $accent-color-hover: #669ec0;
 $accent-color-click: #5496bd;
 $button-disabled: #e5e5e5;
@@ -18,3 +20,6 @@ $input-background-color: #f2f2f2;
 $modal-shadow: #00010126;
 $body-background-color: #ffffff;
 $body-shadow-color: #00010133;
+
+$nav-item-shadow-top: #ffffff33;
+$nav-item-shadow-bottom: #01010133;
