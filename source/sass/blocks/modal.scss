@@ -42,7 +42,7 @@
 }
 
 .modal--success {
-  background: linear-gradient(to bottom, $body-background-color 201px, $input-background-color 201px);
+  background: linear-gradient(to bottom, $body-background-color 65%, $input-background-color 65%);
 
   @media (min-width: $tablet-width) {
     background: linear-gradient(to bottom, $body-background-color 201px, $input-background-color 201px);
