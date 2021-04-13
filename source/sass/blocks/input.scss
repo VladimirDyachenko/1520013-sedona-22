@@ -97,3 +97,60 @@
     background-position: center;
   }
 }
+
+@mixin radio-pseudo($width: 52px) {
+  content: "";
+  position: absolute;
+  width: $width;
+  height: $width;
+  left: 0;
+  border-radius: 50%;
+}
+
+.input--radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.input--radio + .input--lable {
+  &::before {
+    @include radio-pseudo;
+    transform: translateY(-25%);
+    background-color: $input-background-color;
+  }
+}
+
+.input--radio:hover + .input--lable {
+  &::before {
+    @include radio-pseudo;
+    background-color: $button-disabled;
+  }
+}
+
+.input--radio:active + .input--lable {
+  &::before {
+    @include radio-pseudo;
+    background-color: $input-checkbox-focus;
+  }
+
+  &::after {
+    @include radio-pseudo;
+    opacity: 0.3;
+  }
+}
+
+.input--radio:checked + .input--lable {
+  &::after {
+    @include radio-pseudo(21px);
+    background-color: $light-primary-text-color;
+    transform: translate3d(73%, 11%, 0);
+  }
+}
