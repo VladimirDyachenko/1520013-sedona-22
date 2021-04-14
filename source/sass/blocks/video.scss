@@ -1,15 +1,24 @@
-.video__player {
+.video {
+  padding-bottom: 49px;
+
   @media (min-width: $tablet-width) {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
-    padding-right: 0;
-    width: 800px;
+    padding-bottom: 85px;
+  }
+}
+
+.video__player {
+  @media (min-width: $tablet-width) {
+    width: 648px;
     height: 500px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
   }
 }
 
@@ -24,32 +33,51 @@
 }
 
 .video__controls {
-  position: relative;
-  background-color: $input-background-color;
+  $time-line-height: 45px;
+  display: grid;
+  grid-template-columns: min-content 1fr min-content min-content;
+  grid-template-rows: $time-line-height 66px;
+  transform: translateY(-$time-line-height);
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: -$time-line-height;
+  background: linear-gradient(to bottom, $time-line-background-color $time-line-height, $input-background-color $time-line-height);
 
   @media (min-width: $tablet-width) {
-    $height: 93px;
-    min-height: $height;
+    $time-line-height: 93px;
     margin-left: 0;
     margin-right: 0;
-    transform: translateY(-$height);
-    background-color: transparent;
+    transform: translateY(-$time-line-height);
+    background: linear-gradient(to bottom, $time-line-background-color $time-line-height, $time-line-background-color $time-line-height);
+    grid-template-rows: $time-line-height;
   }
 }
 
 .video__time-line {
-  $height: 45px;
-  width: 100%;
-  height: $height;
-  background-color: $time-line-background-color;
-  transform: translateY(-$height);
+  grid-column: 1 / -1;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    $height: 93px;
-    min-height: $height;
-    transform: translateY(0);
+    grid-column: 2 / 3;
+  }
+}
+
+.video__button {
+  background-color: transparent;
+  grid-row: 1 / 2;
+
+  &--replay {
+    grid-column: 1 / 2;
+  }
+
+  &--subtitles {
+    grid-column: 3 / 4;
+  }
+
+  &--fullscreen {
+    grid-column: 4 / 5;
+  }
+
+  @media (max-width: $mobile-only) {
+    grid-row: 2 / 3;
   }
 }
