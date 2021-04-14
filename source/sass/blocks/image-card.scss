@@ -1,15 +1,31 @@
 .image-card {
   line-height: 24px;
   width: 100%;
-  border-bottom: 1px solid $button-disabled;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  &:first-of-type {
-    border-top: 1px solid $button-disabled;
+  @media (max-width: $mobile-only) {
+    border-bottom: 1px solid $button-disabled;
+
+    &:first-of-type {
+      border-top: 1px solid $button-disabled;
+    }
   }
 
   @media (min-width: $tablet-width) {
     padding: 0;
+  }
+
+  &--big {
+    @media (min-width: $tablet-width) {
+      height: 480px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 400px;
+    }
   }
 }
 
@@ -19,14 +35,45 @@
 }
 
 .image-card__image {
-  width: 100%;
-  height: auto;
+  width: 280px;
+  height: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 267px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
 }
 
 .image-card__caption {
   @media (min-width: $tablet-width) {
     background-color: $input-background-color;
-    padding: 22px 20px 15px 20px;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 1;
+    margin-top: -80px;
+    color: $secondary-text-color;
+    background-color: transparent;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      background-color: $primary-text-color-A30;
+      z-index: -1;
+    }
   }
 }
 
@@ -42,7 +89,12 @@
 }
 
 .image-card__author {
-  color: $light-primary-text-color;
-  margin-top: 0;
-  margin-bottom: 10px;
+  @media (max-width: $desktop-width - 1px) {
+    color: $light-primary-text-color;
+  }
+  margin: 0;
+}
+
+.image-card__actions {
+  align-self: center;
 }
