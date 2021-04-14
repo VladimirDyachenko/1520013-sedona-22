@@ -77,6 +77,12 @@
   }
 }
 
+.image-card:nth-of-type(odd):not(:first-of-type) .image-card__caption{
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    background-color: $image-card-caption-dark;
+  }
+}
+
 .image-card__name {
   text-transform: uppercase;
   font-weight: 700;
