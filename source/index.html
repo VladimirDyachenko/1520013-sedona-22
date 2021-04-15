@@ -58,7 +58,12 @@
         <p class="reason-highlight__paragraph">— №1 —</p>
         <p class="reason-highlight__paragraph">Седона не аттракцион для туристов, там течёт своя жизнь</p>
       </div>
-      <img class="reason-highlight__image" src="img/city-photo.jpg" width="320" height="260" alt="Город Седона">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/index/photo-city-desktop.jpg 1x, img/index/photo-city-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/index/photo-city-tablet.jpg 1x, img/index/photo-city-tablet@2x.jpg 2x">
+
+        <img class="reason-highlight__image" src="img/index/photo-city.jpg" width="320" height="260" alt="Город Седона" srcset="img/index/photo-city@2x.jpg 2x">
+      </picture>
     </section>
 
     <section class="advantages">
@@ -78,14 +83,18 @@
       </ul>
     </section>
 
-    <section class="reason-highlight">
+    <section class="reason-highlight reason-highlight--reverse">
       <div class="reason-highlight__text-wrapper">
         <h2 class="title reason-highlight__title">там есть мост дьявола</h2>
         <p class="reason-highlight__paragraph">— №2 —</p>
         <p class="reason-highlight__paragraph">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
       </div>
-      <img class="reason-highlight__image" src="img/bridge-photo.jpg" width="320" height="260"
-        alt="Мост дьявола в каньоне">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/index/photo-bridge-desktop.jpg 1x, img/index/photo-bridge-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/index/photo-bridge-tablet.jpg 1x, img/index/photo-bridge-tablet@2x.jpg 2x">
+
+        <img class="reason-highlight__image" src="img/index/photo-bridge.jpg" width="320" height="260" alt="Мост дьявола в каньоне" srcset="img/index/photo-bridge@2x.jpg 2x">
+      </picture>
     </section>
 
     <section class="reasons">
