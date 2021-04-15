@@ -92,7 +92,7 @@
 .input--checkbox:checked + .input--lable {
   &::after {
     @include checkbox-pseudo;
-    background-image: url("./../../img/icons/checked.svg");
+    background-image: url("../img/icons/checked.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
