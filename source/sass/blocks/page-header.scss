@@ -16,10 +16,14 @@
   }
 
   @media (max-width: $mobile-only) {
-    width: 102px;
-    height: 56px;
     overflow: visible;
     z-index: 1;
     margin: 0 auto;
+  }
+}
+
+.page-header__logo-image {
+  @media (min-width: $desktop-width) {
+    width: 168px;
   }
 }

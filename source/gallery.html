@@ -13,7 +13,11 @@
 
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img src="img/logo-sedona-small.svg" width="102" height="84" alt="CITY OF SEDONA">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo/logotype-lg.svg">
+        <source media="(min-width: 768px)" srcset="img/logo/logotype-md.svg">
+        <img class="page-header__logo-image" src="img/logo/logotype-sm.svg" width="102" height="84" alt="CITY OF SEDONA">
+      </picture>
     </a>
 
     <nav class="page-header__nav main-nav main-nav--opened">
