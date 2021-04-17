@@ -46,7 +46,6 @@
 
   <main class="page-main">
     <div class="welcome welcome--small">
-      <img class="welcome__image" src="img/back-mobile.jpg" width="320" height="214" alt="Вид на горы в Седоне">
       <img class="welcome__text" src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
     </div>
 
@@ -63,7 +62,12 @@
         <div class="gallery__item gallery__item--big image-card image-card--big">
           <a class="image-card__link" href="#">
             <span class="visually-hidden">Открыть фотографию</span>
-            <img class="image-card__image" src="img/photo-1.jpg" width="280" height="280" alt="Дорога во время заката">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/gallery/photo-1-desktop.jpg 1x, img/gallery/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/gallery/photo-1-tablet.jpg 1x, img/gallery/photo-1-tablet@2x.jpg 2x">
+
+              <img class="image-card__image image-card__image--big" src="img/gallery/photo-1-mobile.jpg" width="280" height="280" alt="Дорога во время заката" srcset="img/gallery/photo-1-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <div class="image-card__caption">
             <div class="image-card__text-wrapper">
@@ -84,7 +88,12 @@
         <div class="gallery__item image-card">
           <a class="image-card__link" href="#">
             <span class="visually-hidden">Открыть фотографию</span>
-            <img class="image-card__image" src="img/photo-2.jpg" width="280" height="280" alt="Кактус крупным планом">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/gallery/photo-2-desktop.jpg 1x, img/gallery/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/gallery/photo-2-tablet.jpg 1x, img/gallery/photo-2-tablet@2x.jpg 2x">
+
+              <img class="image-card__image" src="img/gallery/photo-2-mobile.jpg" width="280" height="280" alt="Кактус крупным планом" srcset="img/gallery/photo-2-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <div class="image-card__caption">
             <div class="image-card__text-wrapper">
@@ -105,8 +114,12 @@
         <div class="gallery__item image-card">
           <a class="image-card__link" href="#">
             <span class="visually-hidden">Открыть фотографию</span>
-            <img class="image-card__image" src="img/photo-3.jpg" width="280" height="280"
-              alt="Горная дорога с высоты птичьего полета">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/gallery/photo-3-desktop.jpg 1x, img/gallery/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/gallery/photo-3-tablet.jpg 1x, img/gallery/photo-3-tablet@2x.jpg 2x">
+
+                <img class="image-card__image" src="img/gallery/photo-3-mobile.jpg" width="280" height="280" alt="Горная дорога с высоты птичьего полета" srcset="img/gallery/photo-3-mobile@2x.jpg 2x">
+              </picture>
           </a>
           <div class="image-card__caption">
             <div class="image-card__text-wrapper">
@@ -125,9 +138,14 @@
         </div>
 
         <div class="gallery__item image-card">
-          <a class="image-card__link" href="#">
+          <a class="image-card__link" href="http://localhost:3000/gallery.html#">
             <span class="visually-hidden">Открыть фотографию</span>
-            <img class="image-card__image" src="img/photo-4.jpg" width="280" height="280" alt="Мост Дьявола в каньоне">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/gallery/photo-4-desktop.jpg 1x, img/gallery/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/gallery/photo-4-tablet.jpg 1x, img/gallery/photo-4-tablet@2x.jpg 2x">
+
+              <img class="image-card__image" src="img/gallery/photo-4-mobile.jpg" width="280" height="280" alt="Мост Дьявола в каньоне" srcset="img/gallery/photo-4-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <div class="image-card__caption">
             <div class="image-card__text-wrapper">
@@ -155,7 +173,12 @@
 
     <div class="video">
       <div class="video__player">
-        <img class="video__placeholder" src="img/video-placeholder.jpg" width="320" height="201" alt="Временное изображение">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/gallery/video-desktop.jpg 1x, img/gallery/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/gallery/video-tablet.jpg 1x, img/gallery/video-tablet@2x.jpg 2x">
+
+          <img class="video__placeholder" src="img/gallery/video-mobile.jpg" width="320" height="201" alt="Временное изображение" srcset="img/gallery/video-mobile@2x.jpg 2x">
+        </picture>
 
         <div class="video__controls">
           <div class="video__time-line"></div>
@@ -215,4 +238,5 @@
     </div>
   </footer>
 
+</body>
 </html>
