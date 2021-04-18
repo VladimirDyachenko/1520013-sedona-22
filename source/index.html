@@ -46,8 +46,9 @@
 
   <main class="page-main">
     <div class="welcome">
-      <img class="welcome__text" src="img/text-index.svg" width="282" height="214"
-        alt="Welcome to the gorgeous Sedona, because the grand canyon sucks!">
+      <svg class="welcome__text" width="282" height="214" alt="Welcome to the gorgeous Sedona, because the grand canyon sucks!">
+        <use xlink:href="img/index-sprite.svg#welcome-text"></use>
+      </svg>
     </div>
 
     <section class="introduction">
@@ -62,6 +63,10 @@
         <p class="reason-highlight__paragraph">Седона не аттракцион для туристов, там течёт своя жизнь</p>
       </div>
       <picture>
+        <source type="image/webp" media="(min-width: 1200px)" srcset="img/index/photo-city-desktop.webp 1x, img/index/photo-city-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/index/photo-city-tablet.webp 1x, img/index/photo-city-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/index/photo-city.webp 1x, img/index/photo-city@2x.webp 2x">
+
         <source media="(min-width: 1200px)" srcset="img/index/photo-city-desktop.jpg 1x, img/index/photo-city-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/index/photo-city-tablet.jpg 1x, img/index/photo-city-tablet@2x.jpg 2x">
 
@@ -72,14 +77,23 @@
     <section class="advantages">
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--housing">
+          <svg class="advantages__icon advantages__icon--housing" width="39" height="37">
+            <use xlink:href="img/index-sprite.svg#icon-house"></use>
+          </svg>
           <h2 class="title advantages__title">Жилье</h2>
           <p class="advantages__paragraph">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
         <li class="advantages__item advantages__item--souvenirs">
+          <svg class="advantages__icon advantages__icon--souvenirs" width="32" height="38">
+            <use xlink:href="img/index-sprite.svg#icon-gift"></use>
+          </svg>
           <h2 class="title advantages__title">Сувениры</h2>
           <p class="advantages__paragraph">Не только китайского, но и местного производства!</p>
         </li>
         <li class="advantages__item advantages__item--food">
+          <svg class="advantages__icon advantages__icon--food" width="40" height="35">
+            <use xlink:href="img/index-sprite.svg#icon-food"></use>
+          </svg>
           <h2 class="title advantages__title">Еда</h2>
           <p class="advantages__paragraph">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
@@ -93,6 +107,11 @@
         <p class="reason-highlight__paragraph">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
       </div>
       <picture>
+        <source type="image/webp" media="(min-width: 1200px)" srcset="img/index/photo-bridge-desktop.webp 1x, img/index/photo-bridge-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/index/photo-bridge-tablet.webp 1x, img/index/photo-bridge-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/index/photo-bridge.webp 1x, img/index/photo-bridge@2x.webp 2x">
+
+
         <source media="(min-width: 1200px)" srcset="img/index/photo-bridge-desktop.jpg 1x, img/index/photo-bridge-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/index/photo-bridge-tablet.jpg 1x, img/index/photo-bridge-tablet@2x.jpg 2x">
 
@@ -150,19 +169,25 @@
           <li class="socials__item">
             <a class="socials__link socials__link--twitter" href="#">
               <span class="visually-hidden">Twitter</span>
-              <img src="img/icon-twitter.svg" width="18" height="15" alt="Twitter">
+              <svg class="socials__icon" width="18" height="15" alt="Twitter">
+                <use xlink:href="img/shared-sprite.svg#logo-twitter"></use>
+              </svg>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--facebook" href="#">
               <span class="visually-hidden">Facebook</span>
-              <img src="img/icon-facebook.svg" width="9" height="19" alt="Facebook">
+              <svg class="socials__icon" width="9" height="19" alt="Facebook">
+                <use xlink:href="img/shared-sprite.svg#logo-facebook"></use>
+              </svg>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--youtube" href="#">
               <span class="visually-hidden">YouTube</span>
-              <img src="img/icon-youtube.svg" width="20" height="14" alt="YouTube">
+              <svg class="socials__icon" width="20" height="14" alt="YouTube">
+                <use xlink:href="img/shared-sprite.svg#logo-yt"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -171,7 +196,9 @@
       <div class="page-footer__copyright copyright">
         <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/logo-htmlacademy.svg" width="27" height="35" alt="HTML ACADEMY">
+          <svg class="copyright__logo" width="27" height="35" alt="HTML ACADEMY">
+            <use xlink:href="img/shared-sprite.svg#htmlacademy-logo"></use>
+          </svg>
         </a>
       </div>
     </div>
