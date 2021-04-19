@@ -64,6 +64,8 @@
 .video__button {
   background-color: transparent;
   grid-row: 1 / 2;
+  border: none;
+  cursor: pointer;
 
   &--replay {
     grid-column: 1 / 2;
@@ -79,5 +81,17 @@
 
   @media (max-width: $mobile-only) {
     grid-row: 2 / 3;
+  }
+
+  &:active {
+    transform: scale(1.05);
+  }
+}
+
+.video__controls-icon {
+  fill: $video-icons-mobile;
+
+  @media (min-width: $tablet-width) {
+    fill: $video-icons-tablet;
   }
 }

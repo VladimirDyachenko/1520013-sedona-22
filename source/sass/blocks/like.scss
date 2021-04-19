@@ -1,5 +1,20 @@
 .like__button {
   border: none;
+  background: transparent;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(1.05);
+  }
+}
+
+.like__icon {
+  opacity: 0.3;
+
+  @media (min-width: $desktop-width) {
+    opacity: 1;
+    fill: $secondary-text-color;
+  }
 }
 
 .like__counter {
