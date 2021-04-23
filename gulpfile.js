@@ -79,7 +79,7 @@ exports.copyImages = copyImages;
 
 const createWebP = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({ quality: 90 }))
+    .pipe(webp({ quality: 75 }))
     .pipe(gulp.dest("build/img"));
 }
 
@@ -90,7 +90,7 @@ exports.createWebP = createWebP;
 const sprite = () => {
   return gulp.src("source/img/icons/*svg")
     .pipe(svgstore({ inlineSvg: true }))
-    .pipe(rename("sprive.svg"))
+    .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
 }
 
