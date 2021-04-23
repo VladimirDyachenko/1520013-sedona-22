@@ -99,6 +99,9 @@
     background-color: transparent;
     color: $primary-text-color;
     flex-basis: 153px;
+    display: flex;
+    align-items: center;
+    min-height: 56px;
 
     &:nth-child(4n + 3) {
       margin-left: auto;
