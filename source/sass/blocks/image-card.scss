@@ -90,7 +90,7 @@
 }
 
 .image-card:nth-of-type(odd):not(:first-of-type) .image-card__caption {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     background-color: $image-card-caption-dark;
   }
 }
