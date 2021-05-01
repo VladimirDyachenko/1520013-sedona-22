@@ -10,12 +10,19 @@
 }
 
 .call-to-action__title {
-  margin-bottom: 30px;
+  font-size: 21px;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .call-to-action__paragraph {
   color: $light-primary-text-color;
   margin-bottom: 27px;
+  line-height: 24px;
 }
 
 .call-to-action__button {

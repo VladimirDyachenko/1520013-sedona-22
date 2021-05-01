@@ -1,5 +1,6 @@
 .advantages {
   padding: 35px 20px;
+  padding-bottom: 36px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -52,7 +53,7 @@
     height: $height;
     position: absolute;
     left: -$width;
-    top: 0;
+    top: -5px;
     margin-left: -12px;
 
     @media (min-width: $tablet-width) {
@@ -73,8 +74,8 @@
     width: $width;
     height: $height;
     position: absolute;
-    left: -$width;
-    top: 0;
+    left: -33px;
+    top: -11px;
     margin-left: -12px;
 
     @media (min-width: $tablet-width) {
@@ -95,8 +96,8 @@
     width: $width;
     height: $height;
     position: absolute;
-    left: -$width;
-    top: 0;
+    left: -37px;
+    top: -9px;
     margin-left: -12px;
 
     @media (min-width: $tablet-width) {
@@ -118,5 +119,5 @@
 
 .advantages__paragraph {
   color: $light-primary-text-color;
-  margin-bottom: 26px;
+  margin-bottom: 27px;
 }

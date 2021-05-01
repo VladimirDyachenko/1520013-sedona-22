@@ -46,3 +46,22 @@
 .reasons__paragraph {
   color: $light-primary-text-color;
 }
+
+@media (max-width: $mobile-only) {
+
+  .reasons__item {
+    padding-bottom: 6px;
+    max-width: 255px;
+    margin: 0 auto;
+  }
+
+  .reasons__title {
+    margin-top: 0;
+    margin-bottom: 11px;
+  }
+
+  .reasons__paragraph {
+    margin-top: 0;
+    margin-bottom: 18px;
+  }
+}

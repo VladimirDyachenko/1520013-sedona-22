@@ -5,6 +5,7 @@ $accent-color-hover: #669ec0;
 $accent-color-click: #5496bd;
 $button-disabled: #e5e5e5;
 $primary-text-color: #000000;
+$primary-text-color-A20: transparentize($primary-text-color, 0.8);
 $primary-text-color-A30: transparentize($primary-text-color, 0.7);
 $time-line-background-color: transparentize(#000000, 0.4);
 $light-primary-text-color: #333333;

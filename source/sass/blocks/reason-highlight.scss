@@ -30,7 +30,7 @@
 .reason-highlight__text-wrapper {
   text-align: center;
   text-transform: uppercase;
-  padding: 34px 12px 39px 13px;
+  padding: 34px 12px 23px 13px;
 
   @media (min-width: $tablet-width) {
     flex-basis: 256px;
@@ -43,10 +43,12 @@
 
 .reason-highlight__title {
   margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .reason-highlight__paragraph {
-  margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 .reason-highlight__image {
@@ -57,5 +59,13 @@
   @media (min-width: $tablet-width) {
     height: 256px;
     flex: 1 0 512px;
+  }
+}
+
+// Pixel perfect
+
+@media (max-width: $mobile-only) {
+  .reason-highlight--reverse .reason-highlight__text-wrapper {
+    padding: 39px 12px 20px 12px;
   }
 }
