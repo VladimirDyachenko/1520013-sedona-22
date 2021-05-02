@@ -22,4 +22,15 @@
   line-height: 26px;
   text-transform: uppercase;
   color: $light-primary-text-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+}
+
+.introduction__title--index {
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-top: 27px;
+  }
 }

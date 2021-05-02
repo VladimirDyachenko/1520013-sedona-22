@@ -16,12 +16,12 @@
   &--mask-top {
     @media (max-width: $mobile-only) {
       &::before {
-        content: '';
+        content: "";
         display: block;
         width: 100%;
         height: 16px;
         background-color: rgb(255, 255, 255);
-        clip-path: polygon(0 0, 50% 100%, 100% 0)
+        clip-path: polygon(0 0, 50% 100%, 100% 0);
       }
     }
   }
@@ -34,6 +34,7 @@
 
   @media (min-width: $tablet-width) {
     flex-basis: 256px;
+    padding: 42px 16px 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,11 +45,22 @@
 .reason-highlight__title {
   margin-top: 0;
   margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .reason-highlight__paragraph {
   margin-top: 0;
   margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+    max-width: 25ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .reason-highlight__image {
@@ -61,8 +73,6 @@
     flex: 1 0 512px;
   }
 }
-
-// Pixel perfect
 
 @media (max-width: $mobile-only) {
   .reason-highlight--reverse .reason-highlight__text-wrapper {

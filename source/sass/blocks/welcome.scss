@@ -47,11 +47,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-49%);  ;
+  transform: translate(-50%, -49%);
   max-width: 100%;
 
   @media (min-width: $tablet-width) {
     width: 461px;
     height: 350px;
+    transform: translate(-50%, -52%);
   }
 }

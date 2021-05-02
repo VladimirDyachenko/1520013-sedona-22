@@ -33,7 +33,12 @@
   @media (min-width: $tablet-width) {
     flex: 1 0 256px;
     min-height: 256px;
-    padding: 40px;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,12 +48,35 @@
   }
 }
 
+.reasons__title {
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+}
+
 .reasons__paragraph {
   color: $light-primary-text-color;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+    margin-bottom: 23px;
+
+    &:last-child {
+      margin-bottom: 18px;
+    }
+
+    &--road {
+      max-width: 19ch;
+    }
+
+    &--tourists {
+      max-width: 20ch;
+    }
+  }
 }
 
 @media (max-width: $mobile-only) {
-
   .reasons__item {
     padding-bottom: 6px;
     max-width: 255px;
