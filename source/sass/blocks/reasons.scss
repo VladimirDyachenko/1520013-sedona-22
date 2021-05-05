@@ -52,15 +52,22 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     margin-bottom: 10px;
+    max-width: 160px;
   }
 }
 
 .reasons__paragraph {
   color: $light-primary-text-color;
 
+  &:last-child {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 18px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    margin-top: 1px;
-    margin-bottom: 23px;
+    margin-top: 4px;
+    margin-bottom: 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -68,11 +75,6 @@
     margin-bottom: 19px;
   }
 
-  &:last-child {
-    @media (min-width: $tablet-width) {
-      margin-bottom: 18px;
-    }
-  }
 
   &--road {
     @media (min-width: $tablet-width) {
