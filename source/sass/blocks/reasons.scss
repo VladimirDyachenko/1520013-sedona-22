@@ -44,7 +44,7 @@
   @media (min-width: $desktop-width) {
     flex: 1 0 400px;
     min-height: 256px;
-    padding: 40px;
+    padding: 28px 40px;
   }
 }
 
@@ -59,19 +59,38 @@
   color: $light-primary-text-color;
 
   @media (min-width: $tablet-width) {
-    margin-top: 2px;
+    margin-top: 1px;
     margin-bottom: 23px;
+  }
 
-    &:last-child {
+  @media (min-width: $desktop-width) {
+    margin-top: 3px;
+    margin-bottom: 19px;
+  }
+
+  &:last-child {
+    @media (min-width: $tablet-width) {
       margin-bottom: 18px;
     }
+  }
 
-    &--road {
+  &--road {
+    @media (min-width: $tablet-width) {
       max-width: 19ch;
     }
 
-    &--tourists {
+    @media (min-width: $desktop-width) {
+      max-width: 36ch;
+    }
+  }
+
+  &--tourists {
+    @media (min-width: $tablet-width) {
       max-width: 20ch;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 35ch;
     }
   }
 }

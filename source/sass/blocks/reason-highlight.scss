@@ -38,7 +38,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 400px;
+    flex: 1 1 auto;
+  }
+}
+
+.reason-highlight--reverse .reason-highlight__title {
+  @media (min-width: $desktop-width) {
+    margin-top: 11px;
   }
 }
 
@@ -48,6 +54,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 6px;
   }
 }
 
@@ -60,6 +70,16 @@
     max-width: 25ch;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 36ch;
+  }
+}
+
+.reason-highlight--reverse .reason-highlight__paragraph {
+  @media (min-width: $desktop-width) {
+    max-width: 30ch;
   }
 }
 

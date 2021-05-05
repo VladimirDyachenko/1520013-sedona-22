@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     padding: 158px 0 33px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 158px 0 54px;
+  }
 }
 
 .advantages__list {
@@ -145,4 +149,19 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__paragraph--housing {
+    max-width: 300px;
+  }
+
+  .advantages__paragraph--souvenirs {
+    max-width: 300px;
+  }
+
+  .advantages__paragraph--food {
+    max-width: 300px;
+  }
+
 }

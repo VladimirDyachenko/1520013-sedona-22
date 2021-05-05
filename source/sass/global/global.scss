@@ -53,7 +53,8 @@
 }
 
 .mobile-only,
-.tablet-and-desktop-only {
+.tablet-and-desktop-only,
+.desktop-only {
   display: none;
 }
 
@@ -65,6 +66,12 @@
 
 @media (min-width: $tablet-width) {
   .tablet-and-desktop-only {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .desktop-only {
     display: block;
   }
 }

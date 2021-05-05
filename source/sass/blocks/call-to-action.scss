@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding: 33px 20px 57px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 33px 20px 67px;
+  }
 }
 
 .call-to-action__wrapper {
@@ -40,5 +44,9 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 43px;
   }
 }
