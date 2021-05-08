@@ -2,6 +2,7 @@
   border: none;
   background: transparent;
   cursor: pointer;
+  margin-top: 5px;
 
   &:active {
     transform: scale(1.05);
@@ -19,4 +20,10 @@
 
 .like__counter {
   margin-left: 14px;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    margin-left: 0;
+    transform: translateY(-3px);
+  }
 }

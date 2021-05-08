@@ -70,10 +70,11 @@
 
   @media (min-width: $desktop-width) {
     z-index: 1;
-    margin-top: -80px;
+    transform: translateY(-100%);
     color: $secondary-text-color;
     background-color: transparent;
     position: relative;
+    margin-bottom: -80px;
 
     &::before {
       content: "";
@@ -115,4 +116,14 @@
 
 .image-card__actions {
   align-self: center;
+}
+
+@media (min-width: $desktop-width) {
+  .image-card:not(:first-of-type) .image-card__actions {
+    transform: translateX(-8px);
+  }
+
+  .image-card:nth-of-type(3n) .image-card__actions {
+    transform: translateX(-16px);
+  }
 }
