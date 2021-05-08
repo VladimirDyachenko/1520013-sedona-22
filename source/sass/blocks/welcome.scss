@@ -47,12 +47,30 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -65%);
+  transform: translate(-50%,-49%);
   max-width: 100%;
 
   @media (min-width: $tablet-width) {
     width: 461px;
-    height: 78px;
-    transform: translate(-50%, -70%);
+    height: 350px;
+    transform: translate(-50%, -52%);
+  }
+}
+
+.welcome--small > .welcome__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-65%);
+  max-width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 80px;
+    transform: translate(-50%, -69%);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(-50%,-62%);
   }
 }

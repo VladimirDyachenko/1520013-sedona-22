@@ -20,8 +20,10 @@
 }
 
 .like__counter {
-  margin-left: 3px;
+  font-weight: 700;
+  margin-left: 10px;
   display: inline-block;
+  transform: translateY(-2px);
 
   @media (min-width: $tablet-width) {
     margin-left: 5px;

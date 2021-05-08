@@ -8,6 +8,7 @@
 
   @media (max-width: $mobile-only) {
     border-bottom: 1px solid $button-disabled;
+    padding: 22px 20px 19px;
 
     &:first-of-type {
       border-top: 1px solid $button-disabled;
@@ -123,7 +124,7 @@
   align-self: center;
 
   @media (max-width: $mobile-only) {
-    transform: translate(-6px, 3px);
+    transform: translate(0px, 6px);
   }
 }
 

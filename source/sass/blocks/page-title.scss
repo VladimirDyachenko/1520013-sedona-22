@@ -10,7 +10,7 @@
   }
 
   &--gallery {
-    padding: 33px 20px 32px;
+    padding: 33px 20px 31px;
 
     @media (min-width: $tablet-width) {
       padding: 54px 0 77px;
@@ -25,7 +25,7 @@
   }
 
   &--video {
-    padding: 33px 20px;
+    padding: 32px 20px 34px;
 
     @media (min-width: $tablet-width) {
       padding: 55px 0 76px;
@@ -73,7 +73,7 @@
 }
 
 .page-title--video > .page-title__title {
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     margin-top: 2px;
