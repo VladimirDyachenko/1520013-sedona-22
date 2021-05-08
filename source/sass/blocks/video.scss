@@ -1,5 +1,5 @@
 .video {
-  padding-bottom: 49px;
+  padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 40px;
@@ -42,6 +42,7 @@
   margin-right: 20px;
   margin-bottom: -$time-line-height;
   background: linear-gradient(to bottom, $time-line-background-color $time-line-height, $input-background-color $time-line-height);
+  padding: 0 22px;
 
   @media (min-width: $tablet-width) {
     $time-line-height: 93px;
@@ -50,6 +51,7 @@
     transform: translateY(-$time-line-height);
     background: linear-gradient(to bottom, $time-line-background-color $time-line-height, $time-line-background-color $time-line-height);
     grid-template-rows: $time-line-height;
+    padding: 0;
   }
 }
 
@@ -62,18 +64,21 @@
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
   }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 6px;
-    padding-right: 27px;
-  }
 }
 
 .video__time-line {
   width: 100%;
   height: 3px;
   background-color: $secondary-text-color-A20;
-  --time: 20.7;
+  --time: 15.1;
+
+  @media (min-width: $tablet-width) {
+    --time: 29;
+  }
+
+  @media (min-width: $desktop-width) {
+    --time: 21;
+  }
 
   &::before {
     $size: 9px;
@@ -86,6 +91,7 @@
     height: $size;
     border-radius: 50%;
     left: calc(var(--time) * 1%);
+    cursor: pointer;
   }
 }
 
@@ -97,25 +103,43 @@
 
   &--replay {
     grid-column: 1 / 2;
+    padding: 0;
+    margin: 20px 3px;
+
+    @media (min-width: $tablet-width) {
+      margin: 33px 42px 33px 35px;
+    }
 
     @media (min-width: $desktop-width) {
-      margin: 33px 29px;
+      margin: 33px 41px 33px 34px;
     }
   }
 
   &--subtitles {
     grid-column: 3 / 4;
+    padding: 0;
+    margin: 20px 30px;
+
+    @media (min-width: $tablet-width) {
+      margin: 35px 23px 33px 42px;
+    }
 
     @media (min-width: $desktop-width) {
-      margin: 32px 10px;
+      margin: 35px 24px 33px 42px;
     }
   }
 
   &--fullscreen {
     grid-column: 4 / 5;
+    padding: 0;
+    margin: 20px 1px;
+
+    @media (min-width: $tablet-width) {
+      margin: 36px 41px 36px 8px;
+    }
 
     @media (min-width: $desktop-width) {
-      margin: 35px 38px 35px 7px;
+      margin: 36px 43px 35px 7px;
     }
   }
 
