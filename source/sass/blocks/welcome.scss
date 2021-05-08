@@ -47,7 +47,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-49%);
+  transform: translate(-50%, -49%);
   max-width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -61,7 +61,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-65%);
+  transform: translate(-50%, -65%);
   max-width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -71,6 +71,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    transform: translate(-50%,-62%);
+    transform: translate(-50%, -62%);
   }
 }
