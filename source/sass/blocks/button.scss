@@ -1,5 +1,6 @@
 .button {
   color: $secondary-text-color;
+  font-family: inherit;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -7,6 +8,7 @@
   text-transform: uppercase;
   background-color: $accent-color;
   border: none;
+  cursor: pointer;
 
   &:hover {
     background-color: $accent-color-hover;

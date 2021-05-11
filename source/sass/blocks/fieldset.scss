@@ -14,6 +14,18 @@
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
 
+  &--contacts {
+    padding: 20px 20px 29px;
+  }
+
+  &--impression {
+    padding: 20px 20px 41px;
+  }
+
+  &--visited {
+    padding: 15px 20px 39px;
+  }
+
   @media (min-width: $tablet-width) {
     &--impression {
       padding-right: 30px;
@@ -82,7 +94,7 @@
   }
 
   &--contacts {
-    margin-bottom: 17px;
+    margin-bottom: 20px;
   }
 
   &--impression {
@@ -163,7 +175,12 @@
 .fieldset--name .fieldset__label {
   text-transform: uppercase;
   color: $light-primary-text-color;
+  margin-top: 7px;
   margin-right: 13px;
+}
+
+.fieldset__label[for="middle-name"] {
+  margin-right: 16px;
 }
 
 .fieldset--contacts .fieldset__label {
@@ -174,10 +191,10 @@
 
   @media (max-width: $mobile-only) {
     margin-left: 21px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 
     &[for="email"] {
-      margin-bottom: 5px;
+      margin-bottom: 8px;
     }
   }
 }
@@ -187,17 +204,11 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  padding-left: 75px;
+  padding-left: 78px;
 }
 
 .fieldset__textarea {
   height: 160px;
-}
-
-.feedback__submit {
-  width: auto;
-  margin: 26px 20px 48px 20px;
-  padding: 18.5px 33px 13.5px 32px;
 }
 
 // Tablet grid transformation

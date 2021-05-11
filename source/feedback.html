@@ -54,7 +54,7 @@
       </svg>
     </div>
 
-    <section class="page-title page__wrapper">
+    <section class="page-title page-title--feedback">
       <h1 class="title page-title__title">Оставьте свой отзыв</h1>
       <p class="page-title__paragraph">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных
         вами достопримечательностях</p>
@@ -155,7 +155,7 @@
             placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
 
-        <input class="button fieldset__submit feedback__submit" type="submit" value="Отправить отзыв">
+        <input class="button feedback__submit" type="submit" value="Отправить отзыв">
         <span class="feedback__legend">* — обязательные поля</span>
       </div>
     </form>
@@ -210,18 +210,22 @@
 
   </footer>
 
-  <div class="modal modal--success">
-    <h2 class="title modal__title">Ваш отзыв отправлен!</h2>
-    <p class="modal__paragraph">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
-      его на сайте.</p>
-    <button class="button modal__button" type="button">Закрыть окно</button>
+  <div class="modal">
+    <div class="modal__dialog modal__dialog--success">
+      <h2 class="title modal__title">Ваш отзыв отправлен!</h2>
+      <p class="modal__paragraph">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="button modal__button" type="button">Закрыть окно</button>
+    </div>
   </div>
 
-  <div class="modal modal--error">
-    <h2 class="title modal__title">Что-то пошло не так!</h2>
-    <p class="modal__paragraph">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
-    <button class="button modal__button" type="button">Ок</button>
+  <div class="modal">
+    <div class="modal__dialog modal__dialog--error">
+      <h2 class="title modal__title">Что-то пошло не так!</h2>
+      <p class="modal__paragraph">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
+      <button class="button modal__button" type="button">Ок</button>
+    </div>
   </div>
+
 </body>
 
 </html>

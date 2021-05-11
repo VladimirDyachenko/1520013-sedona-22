@@ -1,8 +1,28 @@
 .modal {
-  padding: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+
+  &--open {
+    display: block;
+  }
+}
+
+.modal__dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 320px;
+  padding: 42px 20px 36px 20px;
   text-align: center;
-  position: relative;
   box-shadow: 0 7px 15px $modal-shadow;
+  background-color: $secondary-text-color;
+  line-height: 24px;
 
   @media (min-width: $tablet-width) {
     width: 640px;
@@ -11,7 +31,7 @@
 
 .modal__title {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -20,7 +40,8 @@
 }
 
 .modal__paragraph {
-  margin-bottom: 29px;
+  max-width: 220px;
+  margin: 0 auto 21px;
   text-transform: uppercase;
 }
 
@@ -33,32 +54,40 @@
   }
 }
 
-.modal--success > .modal__paragraph {
-  margin-bottom: 48px;
-
-  @media screen {
-    margin-bottom: 79px;
-  }
-}
-
-.modal--success {
-  background: linear-gradient(to bottom, $body-background-color 65%, $input-background-color 65%);
+.modal__dialog--success {
+  padding: 37px 20px 21px;
+  background: linear-gradient(to top, $input-background-color 30.4%, $body-background-color 30.4%);
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, $body-background-color 201px, $input-background-color 201px);
     padding: 54px 91px 44px 91px;
+    background: linear-gradient(to top, $input-background-color 121px, $body-background-color 121px);
   }
 }
 
-.modal--error {
+.modal__dialog--success > .modal__button {
+  font-size: 18px;
+}
+
+.modal__dialog--success > .modal__paragraph {
+  margin-bottom: 59px;
+
+  // @media screen {
+  //   margin-bottom: 79px;
+  // }
+}
+
+.modal__dialog--error {
+  padding: 61px 20px 36px 20px;
+
   @media (min-width: $tablet-width) {
     padding: 52px 64px 49px 64px;
     width: 400px;
   }
 }
 
-.modal--error > .modal__button {
-  padding: 18px 64px 14px 63px;
+.modal__dialog--error > .modal__button {
+  padding: 19px 20px 14px 20px;
+  width: 180px;
 
   @media (min-width: $tablet-width) {
     width: 272px;

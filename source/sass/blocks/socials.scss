@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  transform: translate(-2px, 1px);
 }
 
 .socials__item {
@@ -16,7 +17,7 @@
 .socials__link {
   background-color: $accent-color;
   width: 46px;
-  height: 46px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
