@@ -107,11 +107,14 @@
 }
 
 .page-title--feedback > .page-title__title {
-  margin-bottom: 33px;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
 }
 
 .page-title--feedback > .page-title__paragraph {
-
   @media (min-width: $desktop-width) {
     max-width: 444px;
     margin-left: auto;
