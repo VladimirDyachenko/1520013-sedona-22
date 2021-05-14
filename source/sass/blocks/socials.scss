@@ -3,10 +3,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  transform: translate(-2px, 1px);
 }
 
 .socials__item {
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
 .socials__item:not(:last-child) {
@@ -16,13 +17,25 @@
 .socials__link {
   background-color: $accent-color;
   width: 46px;
-  height: 46px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
 
   &--facebook {
     width: 47px;
+  }
+
+  &:hover {
+    background-color: $accent-color-hover;
+  }
+
+  &:active {
+    background-color: $accent-color-click;
+  }
+
+  &:active .socials__icon {
+    opacity: 0.3;
   }
 }
 

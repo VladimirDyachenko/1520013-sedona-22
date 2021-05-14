@@ -9,3 +9,16 @@
   margin-top: -8px;
   margin-right: 12px;
 }
+
+.copyright__logo {
+  fill: $primary-text-color;
+
+  &:hover {
+    fill: $accent-color;
+  }
+
+  &:active {
+    fill: $primary-text-color;
+    opacity: 0.3;
+  }
+}

@@ -4,14 +4,54 @@
   padding-top: 36px;
   padding-bottom: 16px;
 
-  &--gallery {
-    padding-top: 32px;
-    padding-bottom: 33px;
-  }
-
   @media (min-width: $tablet-width) {
     max-width: 560px;
     margin: 0 auto;
+  }
+
+  &--gallery {
+    padding: 33px 20px 31px;
+
+    @media (min-width: $tablet-width) {
+      padding: 54px 0 77px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 32px;
+      padding-top: 100px;
+      padding-bottom: 48px;
+      max-width: 440px;
+    }
+  }
+
+  &--video {
+    padding: 32px 20px 34px;
+
+    @media (min-width: $tablet-width) {
+      padding: 55px 0 76px;
+      max-width: 500px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 60px;
+      padding-bottom: 73px;
+      margin-bottom: 0;
+    }
+  }
+
+  &--feedback {
+    @media (min-width: $tablet-width) {
+      padding-top: 51px;
+      padding-bottom: 90px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 111px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 60px;
+    }
   }
 }
 
@@ -24,7 +64,6 @@
   }
 }
 
-
 .page-title__paragraph {
   line-height: 24px;
   color: $light-primary-text-color;
@@ -36,18 +75,49 @@
   }
 }
 
-.page-title--video {
+.page-title--gallery > .page-title__title {
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-left: 0;
-    padding-right: 0;
+    margin-bottom: 32px;
   }
 }
 
 .page-title--video > .page-title__title {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+    margin-bottom: 33px;
+  }
 }
 
 .page-title--video > .page-title__paragraph {
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 500px;
+    margin-bottom: 4px;
+  }
+}
+
+.page-title--feedback > .page-title__title {
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+}
+
+.page-title--feedback > .page-title__paragraph {
+  @media (min-width: $desktop-width) {
+    max-width: 444px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

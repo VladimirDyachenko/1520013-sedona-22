@@ -35,15 +35,20 @@
   padding: 13px 20px;
   width: 100%;
   background-color: $input-background-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 21px;
+  }
 }
 
 @mixin checkbox-pseudo {
-  $width: 51px;
+  $width: 55px;
   content: "";
   position: absolute;
   width: $width;
   height: $width;
   left: 0;
+  top: 0;
   transform: translateY(-25%);
 }
 
@@ -68,7 +73,7 @@
     background-color: $input-background-color;
 
     @media (max-width: $desktop-width - 1px) {
-      border-radius: 10px;
+      border-radius: 2px;
     }
   }
 }
@@ -98,7 +103,7 @@
   }
 }
 
-@mixin radio-pseudo($width: 52px) {
+@mixin radio-pseudo($width: 55px) {
   content: "";
   position: absolute;
   width: $width;
@@ -149,7 +154,7 @@
 
 .input--radio:checked + .input--lable {
   &::after {
-    @include radio-pseudo(21px);
+    @include radio-pseudo(22px);
     background-color: $light-primary-text-color;
     transform: translate3d(73%, 11%, 0);
   }

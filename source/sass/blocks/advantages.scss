@@ -1,9 +1,14 @@
 .advantages {
   padding: 35px 20px;
+  padding-bottom: 36px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 158px 31px 59px 36px;
+    padding: 158px 0 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 158px 0 54px;
   }
 }
 
@@ -52,7 +57,7 @@
     height: $height;
     position: absolute;
     left: -$width;
-    top: 0;
+    top: -5px;
     margin-left: -12px;
 
     @media (min-width: $tablet-width) {
@@ -61,7 +66,7 @@
       width: $width;
       height: $height;
       left: 50%;
-      transform: translate(-50%, -100%);
+      transform: translate(-50%, -94%);
       margin-left: 0;
       margin-top: -26px;
     }
@@ -73,8 +78,8 @@
     width: $width;
     height: $height;
     position: absolute;
-    left: -$width;
-    top: 0;
+    left: -33px;
+    top: -11px;
     margin-left: -12px;
 
     @media (min-width: $tablet-width) {
@@ -83,7 +88,7 @@
       width: $width;
       height: $height;
       left: 50%;
-      transform: translate(-50%, -100%);
+      transform: translate(-51%, -86%);
       margin-left: 0;
       margin-top: -26px;
     }
@@ -95,8 +100,8 @@
     width: $width;
     height: $height;
     position: absolute;
-    left: -$width;
-    top: 0;
+    left: -37px;
+    top: -9px;
     margin-left: -12px;
 
     @media (min-width: $tablet-width) {
@@ -105,7 +110,7 @@
       width: $width;
       height: $height;
       left: 50%;
-      transform: translate(-50%, -100%);
+      transform: translate(-50%, -87%);
       margin-left: 0;
       margin-top: -26px;
     }
@@ -114,9 +119,48 @@
 
 .advantages__title {
   margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 23px;
+  }
 }
 
 .advantages__paragraph {
   color: $light-primary-text-color;
-  margin-bottom: 26px;
+  margin-bottom: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__paragraph--housing {
+    max-width: 193px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .advantages__paragraph--souvenirs {
+    max-width: 193px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .advantages__paragraph--food {
+    max-width: 157px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__paragraph--housing {
+    max-width: 300px;
+  }
+
+  .advantages__paragraph--souvenirs {
+    max-width: 300px;
+  }
+
+  .advantages__paragraph--food {
+    max-width: 300px;
+  }
 }

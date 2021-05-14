@@ -26,7 +26,7 @@
     </a>
 
     <nav class="page-header__nav main-nav main-nav--opened">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle no-js" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -48,12 +48,13 @@
 
   <main class="page-main">
     <div class="welcome welcome--small">
-      <svg class="welcome__text" width="229" height="39" alt="Sedona">
+      <span class="visually-hidden">Sedona</span>
+      <svg class="welcome__text" width="229" height="39">
         <use xlink:href="img/sprite.svg#sedona-text-smoll"></use>
       </svg>
     </div>
 
-    <section class="page-title page__wrapper">
+    <section class="page-title page-title--feedback">
       <h1 class="title page-title__title">Оставьте свой отзыв</h1>
       <p class="page-title__paragraph">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных
         вами достопримечательностях</p>
@@ -154,13 +155,13 @@
             placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
 
-        <input class="button fieldset__submit feedback__submit" type="submit" value="Отправить отзыв">
+        <input class="button feedback__submit" type="submit" value="Отправить отзыв">
         <span class="feedback__legend">* — обязательные поля</span>
       </div>
     </form>
   </main>
 
-  <footer class="page-footer page__wrapper">
+  <footer class="page-footer">
     <div class="page-footer__wrapper">
 
       <p class="page-footer__hashtag hashtag">
@@ -172,7 +173,7 @@
           <li class="socials__item">
             <a class="socials__link socials__link--twitter" href="#">
               <span class="visually-hidden">Twitter</span>
-              <svg class="socials__icon" width="18" height="15" alt="Twitter">
+              <svg class="socials__icon" width="18" height="15">
                 <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
@@ -180,7 +181,7 @@
           <li class="socials__item">
             <a class="socials__link socials__link--facebook" href="#">
               <span class="visually-hidden">Facebook</span>
-              <svg class="socials__icon" width="9" height="19" alt="Facebook">
+              <svg class="socials__icon" width="9" height="19">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
@@ -188,7 +189,7 @@
           <li class="socials__item">
             <a class="socials__link socials__link--youtube" href="#">
               <span class="visually-hidden">YouTube</span>
-              <svg class="socials__icon" width="20" height="14" alt="YouTube">
+              <svg class="socials__icon" width="20" height="14">
                 <use xlink:href="img/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
@@ -200,7 +201,7 @@
         <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">HTML ACADEMY</span>
-          <svg class="copyright__logo" width="27" height="35" alt="HTML ACADEMY">
+          <svg class="copyright__logo" width="27" height="35">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
@@ -209,18 +210,22 @@
 
   </footer>
 
-  <div class="modal modal--success">
-    <h2 class="title modal__title">Ваш отзыв отправлен!</h2>
-    <p class="modal__paragraph">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
-      его на сайте.</p>
-    <button class="button modal__button" type="button">Закрыть окно</button>
+  <div class="modal">
+    <div class="modal__dialog modal__dialog--success">
+      <h2 class="title modal__title">Ваш отзыв отправлен!</h2>
+      <p class="modal__paragraph">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="button modal__button" type="button">Закрыть окно</button>
+    </div>
   </div>
 
-  <div class="modal modal--error">
-    <h2 class="title modal__title">Что-то пошло не так!</h2>
-    <p class="modal__paragraph">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
-    <button class="button modal__button" type="button">Ок</button>
+  <div class="modal">
+    <div class="modal__dialog modal__dialog--error">
+      <h2 class="title modal__title">Что-то пошло не так!</h2>
+      <p class="modal__paragraph">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
+      <button class="button modal__button" type="button">Ок</button>
+    </div>
   </div>
+
 </body>
 
 </html>

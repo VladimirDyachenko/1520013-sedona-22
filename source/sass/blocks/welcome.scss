@@ -23,7 +23,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    clip-path: polygon(0 0, 100% 0, 100% 89%, 78.7% 94.8%, 78.7% 89%, 50% 100%, 18.3% 88.8%, 18.3% 93.8%, 0% 89%);
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 79.2% 93.6%, 79.1% 89.1%, 50% 100%, 20.8% 89.2%, 20.8% 93.7%, 0 89%);
   }
 
   &--small {
@@ -33,12 +33,12 @@
 
     @media (min-width: $tablet-width) {
       height: 298px;
-      clip-path: polygon(0 0, 100% 0, 100% 93%, 95.7% 93.8%, 95.7% 89%, 50% 100%, 4.3% 88.8%, 4.3% 93.8%, 0% 93%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 95.7% 85.8%, 95.7% 78%, 50% 97.3%, 4.4% 78.2%, 4.4% 86.1%, 0 85%);
     }
 
     @media (min-width: $desktop-width) {
       height: 302px;
-      clip-path: polygon(0 0, 100% 0, 100% 89%, 78.7% 94.8%, 78.7% 89%, 50% 100%, 18.3% 88.8%, 18.3% 93.8%, 0% 89%);
+      clip-path: polygon(0 0, 100% 0, 100% 81%, 79.3% 88.7%, 79.3% 80.3%, 50% 100%, 20.9% 80.9%, 20.9% 88.8%, 0 80.7%);
     }
   }
 }
@@ -47,11 +47,30 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -49%);
   max-width: 100%;
 
   @media (min-width: $tablet-width) {
     width: 461px;
     height: 350px;
+    transform: translate(-50%, -52%);
+  }
+}
+
+.welcome--small > .welcome__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  max-width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 80px;
+    transform: translate(-50%, -69%);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(-50%, -62%);
   }
 }

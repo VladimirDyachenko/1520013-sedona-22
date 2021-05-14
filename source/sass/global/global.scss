@@ -51,3 +51,27 @@
     padding-right: 120px;
   }
 }
+
+.mobile-only,
+.tablet-and-bigger,
+.desktop-only {
+  display: none;
+}
+
+@media (max-width: $mobile-only) {
+  .mobile-only {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tablet-and-bigger {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .desktop-only {
+    display: block;
+  }
+}
