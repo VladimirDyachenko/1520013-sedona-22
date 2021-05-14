@@ -146,16 +146,29 @@
   @media (max-width: $mobile-only) {
     grid-row: 2 / 3;
   }
-
-  &:active {
-    transform: scale(1.05);
-  }
 }
 
 .video__controls-icon {
   fill: $video-icons-mobile;
 
+  &:hover {
+    fill: $light-primary-text-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     fill: $video-icons-tablet;
+
+    &:hover {
+      fill: $video-icons-tablet;
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

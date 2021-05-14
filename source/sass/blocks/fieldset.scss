@@ -28,12 +28,32 @@
 
   @media (min-width: $tablet-width) {
     &--impression {
+      padding-top: 0;
       padding-right: 30px;
+      padding-left: 0;
       border-right: 1px solid $button-disabled;
     }
 
     &--name {
+      padding-top: 0;
       padding-left: 58px;
+    }
+
+    &--contacts {
+      padding: 20px 0 29px;
+      margin-top: 25px;
+      margin-bottom: 19px;
+
+      @media (min-width: $desktop-width) {
+        padding: 20px 0 10px;
+        margin-top: 50px;
+        margin-bottom: 5px;
+      }
+    }
+
+    &--visited {
+      padding-top: 5px;
+      padding-bottom: 46px;
     }
 
     &--contacts,
@@ -57,11 +77,18 @@
 
   @media (min-width: $desktop-width) {
     &--impression {
+      padding-left: 4px;
       padding-right: 50px;
+      padding-bottom: 0;
     }
 
     &--name {
       padding-left: 79px;
+      padding-bottom: 0;
+    }
+
+    &--visited {
+      padding: 5px 0 46px;
     }
 
     &--contacts,
@@ -86,23 +113,37 @@
   margin-bottom: 19px;
   max-width: 308px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+
   &--name {
     @media (min-width: $tablet-width) {
       text-align: left;
       justify-self: start;
+      margin-bottom: 53px;
     }
   }
 
   &--contacts {
     margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 23px;
+    }
   }
 
   &--impression {
     margin-bottom: 37px;
 
-    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    @media (min-width: $tablet-width) {
       text-align: left;
       justify-self: start;
+      margin-bottom: 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      justify-self: center;
     }
   }
 
@@ -169,7 +210,9 @@
 }
 
 .fieldset--visited .fieldset__row:not(:last-of-type) {
-  margin-bottom: 54px;
+  @media (max-width: $mobile-only) {
+    margin-bottom: 54px;
+  }
 }
 
 .fieldset--name .fieldset__label {
@@ -181,6 +224,13 @@
 
 .fieldset__label[for="middle-name"] {
   margin-right: 16px;
+}
+
+.fieldset--contacts .fieldset__label[for="email"] {
+  @media (min-width: $tablet-width) {
+    margin-top: 7px;
+    margin-bottom: 8px;
+  }
 }
 
 .fieldset--contacts .fieldset__label {
@@ -197,6 +247,17 @@
       margin-bottom: 8px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 22px;
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0px;
+    margin-top: 7px;
+    margin-bottom: 8px;
+  }
 }
 
 .fieldset--impression .fieldset__label,
@@ -205,6 +266,16 @@
   line-height: 26px;
   font-weight: 700;
   padding-left: 78px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 79px;
+  }
+}
+
+.fieldset--impression .fieldset__label {
+  @media (min-width: $desktop-width) {
+    padding-left: 75px;
+  }
 }
 
 .fieldset__textarea {
@@ -216,24 +287,34 @@
   .fieldset--visited {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
+    // padding: 0px 95px;
+    grid-gap: 42px 62px;
   }
 
   .fieldset--visited .fieldset__legend {
     grid-column: 1 / -1;
     max-width: 310px;
     justify-self: center;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 16px;
+    }
   }
 
   .fieldset--visited .fieldset__row {
-    margin-bottom: 62px;
+    margin-bottom: 0;
 
-    &:nth-last-of-type(odd) {
-      justify-self: start;
+    // &:nth-last-of-type(odd) {
+    //   margin-left: 75px;
+    // }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 19px;
     }
 
     &:nth-last-of-type(even) {
-      justify-self: end;
-      margin-right: 35px;
+      // justify-self: end;
+      margin-left: 75px;
     }
   }
 }
@@ -251,7 +332,7 @@
 
   .fieldset--contacts .fieldset__legend {
     grid-column: 1 / -1;
-    margin-bottom: 71px;
+    margin-bottom: 74px;
   }
 
   .fieldset--contacts .fieldset__row {
@@ -291,5 +372,21 @@
   .fieldset--visited .fieldset__row {
     margin-bottom: 62px;
     justify-self: start;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 16px;
+    }
+
+    &:nth-of-type(2) {
+      margin-left: 21px;
+    }
+
+    &:nth-of-type(3) {
+      margin-left: 38px;
+    }
+
+    &:nth-of-type(4) {
+      margin-left: 37px;
+    }
   }
 }

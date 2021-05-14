@@ -35,6 +35,10 @@
   padding: 13px 20px;
   width: 100%;
   background-color: $input-background-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 21px;
+  }
 }
 
 @mixin checkbox-pseudo {
@@ -44,6 +48,7 @@
   width: $width;
   height: $width;
   left: 0;
+  top: 0;
   transform: translateY(-25%);
 }
 

@@ -60,6 +60,14 @@
   padding: 0;
   outline-offset: 3px;
   z-index: 1;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav--closed .main-nav__list {

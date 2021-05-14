@@ -25,6 +25,19 @@
   &--facebook {
     width: 47px;
   }
+
+  &:hover {
+    background-color: $accent-color-hover;
+  }
+
+  &:active {
+    background-color: $accent-color-click;
+  }
+
+  &:active .socials__icon {
+    opacity: 0.3;
+  }
+
 }
 
 .socials__icon {
