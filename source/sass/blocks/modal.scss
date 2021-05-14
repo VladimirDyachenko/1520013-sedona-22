@@ -18,7 +18,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 320px;
-  padding: 42px 20px 36px 20px;
+  padding: 42px 20px 36px;
   text-align: center;
   box-shadow: 0 7px 15px $modal-shadow;
   background-color: $secondary-text-color;
@@ -43,6 +43,10 @@
   max-width: 220px;
   margin: 0 auto 21px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 295px;
+  }
 }
 
 .modal__button {
@@ -59,29 +63,53 @@
   background: linear-gradient(to top, $input-background-color 30.4%, $body-background-color 30.4%);
 
   @media (min-width: $tablet-width) {
-    padding: 54px 91px 44px 91px;
-    background: linear-gradient(to top, $input-background-color 121px, $body-background-color 121px);
+    padding: 46px 91px 44px;
+    background: linear-gradient(to top, $input-background-color 145px, $body-background-color 145px);
+  }
+}
+
+.modal__dialog--success > .modal__title {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
   }
 }
 
 .modal__dialog--success > .modal__button {
   font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .modal__dialog--success > .modal__paragraph {
   margin-bottom: 59px;
 
-  // @media screen {
-  //   margin-bottom: 79px;
-  // }
+  @media (min-width: $tablet-width) {
+    max-width: 420px;
+    margin-bottom: 87px;
+  }
 }
 
 .modal__dialog--error {
   padding: 61px 20px 36px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 52px 64px 49px 64px;
+    padding: 52px 50px 49px;
     width: 400px;
+  }
+}
+
+.modal__dialog--error > .modal__title {
+  @media (min-width: $tablet-width) {
+    max-width: 250px;
+    margin: 0 auto 25px
+  }
+}
+
+.modal__dialog--error > .modal__paragraph {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
   }
 }
 
